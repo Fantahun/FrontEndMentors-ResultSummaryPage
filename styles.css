@@ -9,7 +9,8 @@ html{
     font-size: 62.6%;
 }
 body{
-    font-family: poppins,sans-serif;
+    font-family:  "Hanken Grotesk", poppins,sans-serif;
+
 }
 
 .container
@@ -18,19 +19,18 @@ body{
    display: flex;
    justify-content: center;
    align-items: center;
-   
-   
 }
 
 .inner-container{
     display: flex;
+    flex-wrap: wrap;
     box-shadow: 0px 5px 50px  0 #00000040;
     border-radius: 5rem !important;
 }
 
 .left, .right{
     border-radius: 4rem;
-    height: 600px;
+    height: 500px;
     width: 400px;
     text-align: center;
     display: flex;
@@ -45,14 +45,15 @@ body{
 }
 
 .your-result{
-    font-size: 3rem;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, .8);
     font-weight: 500;
 }
 
 .circle{
     background:linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
-   width: 250px;
-   height: 250px;
+   width: 200px;
+   height: 200px;
    margin: 0 auto;
    border-radius: 100%;
    display: flex;
@@ -75,11 +76,13 @@ body{
 
 .result-status{
     font-size: 4rem;
+    margin-bottom: 1rem;
     font-weight: 600;
 }
 
 .result-description{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    padding: 0 3rem;
 }
 
 
@@ -92,9 +95,9 @@ justify-content: space-around;
 
 
 .summary{
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: left;
-    font-weight: 500;
+    font-weight: 600;
     color: hsl(224, 30%, 27%);
 }
 
@@ -105,11 +108,11 @@ justify-content: space-around;
 .left-right-container, .result-left{
     display: flex;
     justify-content: space-between;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
-.left-right-container{
 
+.left-right-container{
     margin: 1.5rem;
 }
 
@@ -117,8 +120,8 @@ justify-content: space-around;
     background: blueviolet;
 color: white;
 margin-bottom: 1rem;
-padding: 2rem;
-border-radius: .5rem;
+padding: 1.5rem;
+border-radius: 1rem;
 }
 
 .result-left{
@@ -133,10 +136,11 @@ border-radius: .5rem;
 
 
 button{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
-    padding: 2rem;
-    border-radius: 5rem;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 10rem;
     background-color:hsl(224, 30%, 27%);
     border: none;
     color:white;
@@ -171,8 +175,29 @@ cursor: pointer;
     background-color: hsl(234, 85%, 45%,.2);
     color: hsl(234, 85%, 45%);
 
-}
+ }
 
-@media only screen and (max-width: 600px) {
+/* 
+/* Media Query to  */
+     @media only screen and (max-width: 810px) {
+        .inner-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 30px;
+        }
 
-}
+        .left{
+            justify-content: space-between;
+            height: 400px;
+            height: auto;
+        }
+
+        .circle{
+            margin: 1rem auto;
+            width: 150px;
+            height: 150px;
+        }
+
+    }  
